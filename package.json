@@ -1,0 +1,21 @@
+{
+  "name": "code-indexer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Code Indexer - 代码语义索引与搜索工具",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.10.1"
+  },
+  "keywords": ["code-indexer", "semantic-search", "tauri", "rust", "embeddings"],
+  "author": "",
+  "license": "MIT"
+}

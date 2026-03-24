@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Indexer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #16213e;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #0f3460;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: #e94560;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .left-panel {
+            width: 280px;
+            border-right: 1px solid #0f3460;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            padding: 12px 16px;
+            background: #16213e;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #0f3460;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-header button {
+            background: transparent;
+            border: 1px solid #e94560;
+            color: #e94560;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .panel-header button:hover {
+            background: #e94560;
+            color: white;
+        }
+
+        .tree-container {
+            flex: 1;
+            overflow: auto;
+            padding: 8px;
+        }
+
+        .tree-item {
+            cursor: pointer;
+        }
+
+        .tree-row {
+            display: flex;
+            align-items: center;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .tree-row:hover {
+            background: #16213e;
+        }
+
+        .tree-row.selected {
+            background: #0f3460;
+        }
+
+        .tree-row.loading {
+            opacity: 0.6;
+        }
+
+        .tree-arrow {
+            width: 16px;
+            font-size: 10px;
+            color: #888;
+            transition: transform 0.2s;
+        }
+
+        .tree-arrow.expanded {
+            transform: rotate(90deg);
+        }
+
+        .tree-arrow.hidden {
+            visibility: hidden;
+        }
+
+        .tree-icon {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        .tree-name {
+            flex: 1;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .tree-children {
+            display: none;
+        }
+
+        .tree-item.expanded > .tree-children {
+            display: block;
+        }
+
+        .empty-message {
+            color: #666;
+            font-size: 0.85rem;
+            padding: 12px;
+        }
+
+        .center-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .toolbar {
+            padding: 12px 16px;
+            background: #16213e;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            border-bottom: 1px solid #0f3460;
+        }
+
+        .selected-path {
+            flex: 1;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .selected-path span {
+            color: #eee;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #e94560;
+            color: white;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background: #ff6b6b;
+        }
+
+        .btn-primary:disabled {
+            background: #555;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: #0f3460;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #1a4a7a;
+        }
+
+        .content-area {
+            flex: 1;
+            overflow: auto;
+            padding: 16px;
+        }
+
+        .progress-container {
+            display: none;
+            margin-bottom: 16px;
+            padding: 16px;
+            background: #16213e;
+            border-radius: 8px;
+        }
+
+        .progress-container.active {
+            display: block;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #0f3460;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            transition: width 0.3s;
+            width: 0%;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 0.85rem;
+        }
+
+        .progress-label {
+            color: #eee;
+        }
+
+        .progress-detail {
+            color: #888;
+            max-width: 60%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .search-section {
+            background: #16213e;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .search-section h3 {
+            margin-bottom: 12px;
+            color: #e94560;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #0f3460;
+            border-radius: 6px;
+            background: #1a1a2e;
+            color: #eee;
+            font-size: 0.95rem;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #e94560;
+        }
+
+        .results-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .result-item {
+            background: #1a1a2e;
+            border: 1px solid #0f3460;
+            border-radius: 8px;
+            padding: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .result-item:hover {
+            border-color: #e94560;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .result-path {
+            color: #e94560;
+            font-weight: 500;
+        }
+
+        .result-score {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .result-lines {
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .result-preview {
+            background: #16213e;
+            padding: 8px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            font-size: 0.85rem;
+            color: #aaa;
+            white-space: pre-wrap;
+            max-height: 80px;
+            overflow: hidden;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .welcome h2 {
+            margin-bottom: 12px;
+            color: #888;
+        }
+
+        .indices-list {
+            margin-top: 16px;
+        }
+
+        .index-item {
+            background: #1a1a2e;
+            border: 1px solid #0f3460;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .index-info h4 {
+            color: #e94560;
+            margin-bottom: 4px;
+        }
+
+        .index-info p {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: #16213e;
+            padding: 24px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .modal h2 {
+            margin-bottom: 16px;
+            color: #e94560;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #0f3460;
+            border-radius: 6px;
+            background: #1a1a2e;
+            color: #eee;
+            font-size: 0.95rem;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #e94560;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .snippet-viewer {
+            margin-top: 16px;
+            background: #1a1a2e;
+            border: 1px solid #0f3460;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .snippet-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .snippet-code {
+            background: #0f0f1a;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: "Consolas", "Monaco", monospace;
+            font-size: 0.9rem;
+            overflow: auto;
+            max-height: 400px;
+            white-space: pre;
+        }
+
+        .code-highlight {
+            background: rgba(233, 69, 96, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Code Indexer</h1>
+        <button class="btn btn-secondary" id="settings-btn">⚙️ 设置</button>
+    </header>
+
+    <div class="main-container">
+        <div class="left-panel">
+            <div class="panel-header">
+                文件浏览器
+            </div>
+            <div class="tree-container" id="folder-tree">
+                <div class="empty-message">加载中...</div>
+            </div>
+        </div>
+
+        <div class="center-panel">
+            <div class="toolbar">
+                <div class="selected-path">
+                    已选择: <span id="path-display">未选择</span>
+                </div>
+                <button class="btn btn-primary" id="index-btn" disabled>📊 开始索引</button>
+            </div>
+
+            <div class="content-area">
+                <div class="progress-container" id="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-info">
+                        <span class="progress-label" id="progress-label">准备中...</span>
+                        <span class="progress-detail" id="progress-detail"></span>
+                    </div>
+                </div>
+
+                <div class="search-section">
+                    <h3>🔍 搜索代码</h3>
+                    <div class="search-box">
+                        <input type="text" class="search-input" id="search-input" placeholder="输入搜索内容...">
+                        <select class="btn btn-secondary" id="project-select">
+                            <option value="">选择项目...</option>
+                        </select>
+                        <button class="btn btn-primary" id="search-btn">搜索</button>
+                    </div>
+                    <div class="indices-list" id="indices-list"></div>
+                    <div class="results-list" id="results-list"></div>
+                </div>
+
+                <div class="snippet-viewer" id="snippet-viewer" style="display: none;">
+                    <div class="snippet-header">
+                        <span class="result-path" id="snippet-path"></span>
+                        <button class="btn btn-secondary" id="close-snippet">关闭</button>
+                    </div>
+                    <div class="result-lines" id="snippet-lines"></div>
+                    <pre class="snippet-code" id="snippet-code"></pre>
+                </div>
+
+                <div class="welcome" id="welcome">
+                    <h2>欢迎使用 Code Indexer</h2>
+                    <p>1. 从左侧选择一个代码仓库文件夹</p>
+                    <p>2. 点击「开始索引」建立向量索引</p>
+                    <p>3. 使用搜索功能查找相关代码</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal-overlay" id="settings-modal">
+        <div class="modal">
+            <h2>⚙️ API 配置</h2>
+            <div class="form-group">
+                <label>API Key (DashScope)</label>
+                <input type="password" id="api-key" placeholder="sk-...">
+            </div>
+            <div class="form-group">
+                <label>模型名称</label>
+                <input type="text" id="model-name" value="text-embedding-v4">
+            </div>
+            <div class="form-group">
+                <label>API 地址</label>
+                <input type="text" id="api-url" value="https://dashscope.aliyuncs.com/api/v1/services/embeddings/text-embedding">
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" id="cancel-settings">取消</button>
+                <button class="btn btn-primary" id="save-settings">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        const { invoke } = window.__TAURI__.core;
+        const { listen } = window.__TAURI__.event;
+
+        let selectedPath = null;
+        let selectedProject = "";
+
+        // DOM Elements
+        const folderTree = document.getElementById("folder-tree");
+        const pathDisplay = document.getElementById("path-display");
+        const indexBtn = document.getElementById("index-btn");
+        const progressContainer = document.getElementById("progress-container");
+        const progressFill = document.getElementById("progress-fill");
+        const progressLabel = document.getElementById("progress-label");
+        const progressDetail = document.getElementById("progress-detail");
+        const searchInput = document.getElementById("search-input");
+        const projectSelect = document.getElementById("project-select");
+        const searchBtn = document.getElementById("search-btn");
+        const resultsList = document.getElementById("results-list");
+        const indicesList = document.getElementById("indices-list");
+        const welcome = document.getElementById("welcome");
+        const settingsModal = document.getElementById("settings-modal");
+        const snippetViewer = document.getElementById("snippet-viewer");
+
+        // Initialize
+        async function init() {
+            try {
+                // Load config
+                const config = await invoke("get_or_create_config");
+                document.getElementById("api-key").value = config.api_key === "YOUR_API_KEY" ? "" : config.api_key;
+                document.getElementById("model-name").value = config.model;
+                document.getElementById("api-url").value = config.base_url;
+
+                // Load drives
+                const drives = await invoke("get_drives");
+                folderTree.innerHTML = "";
+                drives.forEach(drive => {
+                    folderTree.appendChild(createTreeNode(drive, 0));
+                });
+
+                // Load indices
+                await loadIndices();
+            } catch (error) {
+                console.error("初始化失败:", error);
+                folderTree.innerHTML = `<div class="empty-message">错误: ${error}</div>`;
+            }
+        }
+
+        // Create tree node
+        function createTreeNode(entry, depth) {
+            const item = document.createElement("div");
+            item.className = "tree-item";
+            item.dataset.path = entry.path;
+
+            const row = document.createElement("div");
+            row.className = "tree-row";
+            row.style.paddingLeft = `${depth * 16 + 4}px`;
+
+            const arrow = document.createElement("span");
+            arrow.className = "tree-arrow";
+            if (entry.is_folder) arrow.textContent = "▶";
+            else arrow.classList.add("hidden");
+            row.appendChild(arrow);
+
+            const icon = document.createElement("span");
+            icon.className = "tree-icon";
+            icon.textContent = entry.is_folder ? "📁" : getFileIcon(entry.name);
+            row.appendChild(icon);
+
+            const name = document.createElement("span");
+            name.className = "tree-name";
+            name.textContent = entry.name;
+            name.title = entry.path;
+            row.appendChild(name);
+
+            item.appendChild(row);
+
+            const children = document.createElement("div");
+            children.className = "tree-children";
+            item.appendChild(children);
+
+            if (entry.is_folder) {
+                arrow.addEventListener("click", async (e) => {
+                    e.stopPropagation();
+                    if (item.classList.contains("expanded")) {
+                        item.classList.remove("expanded");
+                        arrow.classList.remove("expanded");
+                        return;
+                    }
+
+                    if (children.children.length === 0) {
+                        row.classList.add("loading");
+                        try {
+                            const entries = await invoke("read_directory", { path: entry.path });
+                            row.classList.remove("loading");
+                            entries.forEach(child => {
+                                children.appendChild(createTreeNode(child, depth + 1));
+                            });
+                        } catch (error) {
+                            row.classList.remove("loading");
+                            console.error("加载失败:", error);
+                        }
+                    }
+                    item.classList.add("expanded");
+                    arrow.classList.add("expanded");
+                });
+
+                row.addEventListener("click", (e) => {
+                    if (e.target === arrow) return;
+                    selectFolder(entry.path, entry.name);
+                });
+            } else {
+                row.addEventListener("click", () => selectFolder(entry.path, entry.name));
+            }
+
+            return item;
+        }
+
+        function selectFolder(path, name) {
+            selectedPath = path;
+            pathDisplay.textContent = name;
+            indexBtn.disabled = false;
+
+            document.querySelectorAll(".tree-item.selected, .tree-row.selected")
+                .forEach(el => el.classList.remove("selected"));
+
+            const selectedItem = document.querySelector(
+                `.tree-item[data-path="${CSS.escape(path)}"]`
+            );
+            if (selectedItem) {
+                selectedItem.classList.add("selected");
+                selectedItem.querySelector(".tree-row").classList.add("selected");
+            }
+        }
+
+        function getFileIcon(filename) {
+            const ext = filename.split(".").pop()?.toLowerCase();
+            const icons = {
+                ts: "📘", tsx: "📘", js: "📜", jsx: "📜",
+                py: "🐍", rs: "🦀", go: "🔵", java: "☕",
+                c: "⚙️", cpp: "⚙️", h: "📄",
+                md: "📝", json: "📋", yaml: "📋",
+            };
+            return icons[ext] || "📄";
+        }
+
+        async function loadIndices() {
+            try {
+                const indices = await invoke("list_indices");
+                projectSelect.innerHTML = '<option value="">选择项目...</option>';
+                indicesList.innerHTML = '';
+
+                indices.forEach(meta => {
+                    projectSelect.innerHTML += `<option value="${meta.project_name}">${meta.project_name}</option>`;
+
+                    const item = document.createElement("div");
+                    item.className = "index-item";
+                    item.innerHTML = `
+                        <div class="index-info">
+                            <h4>${meta.project_name}</h4>
+                            <p>${meta.total_files} 文件, ${meta.total_chunks} 块 | ${meta.embedding_dim} 维</p>
+                            <p style="font-size: 0.75rem; color: #666;">${meta.created_at}</p>
+                        </div>
+                        <button class="btn btn-secondary" onclick="selectProject('${meta.project_name}')">使用</button>
+                    `;
+                    indicesList.appendChild(item);
+                });
+            } catch (error) {
+                console.error("加载索引失败:", error);
+            }
+        }
+
+        window.selectProject = function(name) {
+            selectedProject = name;
+            projectSelect.value = name;
+            searchInput.focus();
+        };
+
+        async function startIndex() {
+            if (!selectedPath) return;
+
+            indexBtn.disabled = true;
+            progressContainer.classList.add("active");
+            progressFill.style.width = "0%";
+            progressLabel.textContent = "准备中...";
+            progressDetail.textContent = selectedPath;
+            welcome.style.display = "none";
+
+            try {
+                const result = await invoke("index_folder", { folderPath: selectedPath });
+                alert(result);
+                await loadIndices();
+            } catch (error) {
+                alert("索引失败: " + error);
+            } finally {
+                indexBtn.disabled = false;
+            }
+        }
+
+        async function search() {
+            const query = searchInput.value.trim();
+            if (!query) return;
+
+            const project = projectSelect.value || selectedProject;
+            if (!project) {
+                alert("请先选择要搜索的项目");
+                return;
+            }
+
+            searchBtn.disabled = true;
+            searchBtn.textContent = "搜索中...";
+            resultsList.innerHTML = '<div class="empty-message">搜索中...</div>';
+
+            try {
+                const results = await invoke("search_code", {
+                    query,
+                    projectName: project,
+                    topK: 10
+                });
+
+                resultsList.innerHTML = "";
+
+                if (results.length === 0) {
+                    resultsList.innerHTML = '<div class="empty-message">没有找到相关结果</div>';
+                    return;
+                }
+
+                results.forEach((result, i) => {
+                    const item = document.createElement("div");
+                    item.className = "result-item";
+                    item.innerHTML = `
+                        <div class="result-header">
+                            <span class="result-path">${result.chunk.relative_path}</span>
+                            <span class="result-score">相似度: ${(result.score * 100).toFixed(1)}%</span>
+                        </div>
+                        <div class="result-lines">行 ${result.chunk.start_line} - ${result.chunk.end_line}</div>
+                        <div class="result-preview">${escapeHtml(result.chunk.content.substring(0, 300))}</div>
+                    `;
+                    item.addEventListener("click", () => showSnippet(result));
+                    resultsList.appendChild(item);
+                });
+            } catch (error) {
+                resultsList.innerHTML = `<div class="empty-message">搜索失败: ${error}</div>`;
+            } finally {
+                searchBtn.disabled = false;
+                searchBtn.textContent = "搜索";
+            }
+        }
+
+        function showSnippet(result) {
+            const { chunk, score } = result;
+            document.getElementById("snippet-path").textContent = chunk.relative_path;
+            document.getElementById("snippet-lines").textContent =
+                `行 ${chunk.start_line} - ${chunk.end_line} | 相似度: ${(score * 100).toFixed(1)}%`;
+            document.getElementById("snippet-code").textContent = chunk.content;
+            snippetViewer.style.display = "block";
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement("div");
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Event Listeners
+        listen("embed-progress", (event) => {
+            const { progress, current_file, message } = event.payload;
+            progressFill.style.width = `${progress}%`;
+            progressLabel.textContent = message;
+            progressDetail.textContent = current_file;
+
+            if (progress >= 100) {
+                progressContainer.classList.remove("active");
+            }
+        });
+
+        indexBtn.addEventListener("click", startIndex);
+        searchBtn.addEventListener("click", search);
+        searchInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") search();
+        });
+
+        document.getElementById("settings-btn").addEventListener("click", () => {
+            settingsModal.classList.add("active");
+        });
+
+        document.getElementById("cancel-settings").addEventListener("click", () => {
+            settingsModal.classList.remove("active");
+        });
+
+        document.getElementById("save-settings").addEventListener("click", async () => {
+            const config = {
+                api_key: document.getElementById("api-key").value,
+                model: document.getElementById("model-name").value,
+                base_url: document.getElementById("api-url").value,
+            };
+
+            try {
+                await invoke("update_config", { config });
+                settingsModal.classList.remove("active");
+                alert("配置已保存");
+            } catch (error) {
+                alert("保存失败: " + error);
+            }
+        });
+
+        document.getElementById("close-snippet").addEventListener("click", () => {
+            snippetViewer.style.display = "none";
+        });
+
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</body>
+</html>
