@@ -1,24 +1,6 @@
 member_id: user-2f0fd708
 month: 2026-03
 entries:
-- model: composer-2-fast
-  session_count: 14
-  total_tokens: 434850
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: composer-2
-  session_count: 13
-  total_tokens: 455091
-  lines_added: 248
-  lines_removed: 100
-  files_changed: 13
-- model: gemini-3.1-pro
-  session_count: 26
-  total_tokens: 97729
-  lines_added: 566
-  lines_removed: 32
-  files_changed: 9
 - model: default
   session_count: 5
   total_tokens: 0
@@ -31,18 +13,54 @@ entries:
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: 197nxlw1illpr6lc6evrflzp9smfvuq3734v17fsu8h3
-  session_count: 11
-  total_tokens: 348754
+- model: claude-4.6-opus-max-thinking
+  session_count: 9
+  total_tokens: 75573
   lines_added: 0
   lines_removed: 0
   files_changed: 0
+- model: claude-opus-4.6
+  session_count: 31
+  total_tokens: 127437
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: composer-1.5
+  session_count: 3
+  total_tokens: 86490
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: gemini-3.1-pro
+  session_count: 26
+  total_tokens: 97729
+  lines_added: 566
+  lines_removed: 32
+  files_changed: 9
+- model: composer-2
+  session_count: 13
+  total_tokens: 455091
+  lines_added: 248
+  lines_removed: 100
+  files_changed: 13
 - model: gpt-5.3-codex
   session_count: 178
   total_tokens: 545647
   lines_added: 11374
   lines_removed: 2420
   files_changed: 88
+- model: composer-2-fast
+  session_count: 14
+  total_tokens: 434850
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: gpt-5.3-codex-high
+  session_count: 5
+  total_tokens: 17243
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
 - model: gpt-5.4-medium
   session_count: 50
   total_tokens: 403507
@@ -55,15 +73,9 @@ entries:
   lines_added: 75
   lines_removed: 155
   files_changed: 3
-- model: claude-opus-4.6
-  session_count: 31
-  total_tokens: 127437
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: claude-4.6-opus-max-thinking
-  session_count: 9
-  total_tokens: 75573
+- model: 197nxlw1illpr6lc6evrflzp9smfvuq3734v17fsu8h3
+  session_count: 11
+  total_tokens: 348754
   lines_added: 0
   lines_removed: 0
   files_changed: 0
@@ -73,15 +85,3 @@ entries:
   lines_added: 33
   lines_removed: 11
   files_changed: 4
-- model: gpt-5.3-codex-high
-  session_count: 5
-  total_tokens: 17243
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: composer-1.5
-  session_count: 3
-  total_tokens: 86490
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
