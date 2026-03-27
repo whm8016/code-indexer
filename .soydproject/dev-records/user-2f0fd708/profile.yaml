@@ -1,0 +1,29 @@
+member_id: user-2f0fd708
+display_name: whm
+email: 347734166@qq.com
+current_streak: 9
+longest_streak: 14
+last_active_date: 2026-03-27
+total_seconds: 58560
+exported_at: 2026-03-27T16:38:46.844131400+00:00
+top_languages:
+- language: Python
+  total_seconds: 38520
+- language: YAML
+  total_seconds: 7560
+- language: JSON
+  total_seconds: 4440
+- language: Markdown
+  total_seconds: 2640
+- language: TypeScript React
+  total_seconds: 600
+- language: TOML
+  total_seconds: 600
+- language: JavaScript
+  total_seconds: 360
+- language: Rust
+  total_seconds: 240
+- language: SQL
+  total_seconds: 120
+- language: Java
+  total_seconds: 120

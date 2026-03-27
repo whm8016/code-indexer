@@ -1,0 +1,281 @@
+member_id: user-2f0fd708
+month: 2026-02
+days:
+- date: 2026-02-01
+  total_seconds: 3720
+  file_edits: 38
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: C++
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Go
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: JSON
+    total_seconds: 240
+    lines_added: 0
+    lines_removed: 0
+  - language: Java
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: JavaScript
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Markdown
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Python
+    total_seconds: 1320
+    lines_added: 0
+    lines_removed: 0
+  - language: TOML
+    total_seconds: 240
+    lines_added: 0
+    lines_removed: 0
+  - language: YAML
+    total_seconds: 1320
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 3720
+- date: 2026-02-02
+  total_seconds: 840
+  file_edits: 10
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: JSON
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Python
+    total_seconds: 360
+    lines_added: 0
+    lines_removed: 0
+  - language: YAML
+    total_seconds: 360
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 840
+- date: 2026-02-03
+  total_seconds: 360
+  file_edits: 4
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: YAML
+    total_seconds: 360
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 360
+- date: 2026-02-04
+  total_seconds: 1200
+  file_edits: 19
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Python
+    total_seconds: 960
+    lines_added: 0
+    lines_removed: 0
+  - language: YAML
+    total_seconds: 240
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 1200
+- date: 2026-02-06
+  total_seconds: 480
+  file_edits: 5
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Python
+    total_seconds: 480
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 480
+- date: 2026-02-08
+  total_seconds: 360
+  file_edits: 4
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Python
+    total_seconds: 360
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 360
+- date: 2026-02-09
+  total_seconds: 960
+  file_edits: 9
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Python
+    total_seconds: 960
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 960
+- date: 2026-02-13
+  total_seconds: 600
+  file_edits: 5
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Markdown
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Python
+    total_seconds: 480
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 600
+- date: 2026-02-16
+  total_seconds: 600
+  file_edits: 5
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Markdown
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Python
+    total_seconds: 480
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 600
+- date: 2026-02-17
+  total_seconds: 480
+  file_edits: 7
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Python
+    total_seconds: 480
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 480
+- date: 2026-02-18
+  total_seconds: 1920
+  file_edits: 19
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Markdown
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Python
+    total_seconds: 1800
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 1920
+- date: 2026-02-23
+  total_seconds: 120
+  file_edits: 1
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Markdown
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 120
+- date: 2026-02-26
+  total_seconds: 2520
+  file_edits: 24
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: JSON
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
+  - language: Markdown
+    total_seconds: 360
+    lines_added: 0
+    lines_removed: 0
+  - language: Python
+    total_seconds: 2040
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 2520
+- date: 2026-02-28
+  total_seconds: 960
+  file_edits: 8
+  lines_added: 0
+  lines_removed: 0
+  terminal_cmds: 0
+  agent_actions: 0
+  languages:
+  - language: Markdown
+    total_seconds: 720
+    lines_added: 0
+    lines_removed: 0
+  - language: Python
+    total_seconds: 240
+    lines_added: 0
+    lines_removed: 0
+  sources:
+  - source: cursor
+    total_seconds: 960
