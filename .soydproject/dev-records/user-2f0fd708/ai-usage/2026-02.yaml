@@ -1,27 +1,27 @@
 member_id: user-2f0fd708
 month: 2026-02
 entries:
-- model: gemini-3-flash
-  session_count: 2
-  total_tokens: 0
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: gpt-5.3-codex
-  session_count: 16
-  total_tokens: 19546
-  lines_added: 10715
-  lines_removed: 461
-  files_changed: 31
 - model: gpt-5.2-codex-high
   session_count: 71
   total_tokens: 0
   lines_added: 26
   lines_removed: 18
   files_changed: 5
+- model: gemini-3-flash
+  session_count: 2
+  total_tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
 - model: gpt-5.2
   session_count: 1
   total_tokens: 0
   lines_added: 1
   lines_removed: 1
   files_changed: 1
+- model: gpt-5.3-codex
+  session_count: 16
+  total_tokens: 19546
+  lines_added: 10715
+  lines_removed: 461
+  files_changed: 31
