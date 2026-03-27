@@ -1,9 +1,9 @@
 member_id: user-2f0fd708
 month: 2025-10
 entries:
-- model: gpt-5
-  session_count: 10
-  total_tokens: 18082
+- model: claude-4.5-sonnet-thinking
+  session_count: 5
+  total_tokens: 26753
   lines_added: 0
   lines_removed: 0
   files_changed: 0
@@ -13,9 +13,9 @@ entries:
   lines_added: 35730
   lines_removed: 4899
   files_changed: 0
-- model: claude-4.5-sonnet-thinking
-  session_count: 5
-  total_tokens: 26753
+- model: gpt-5
+  session_count: 10
+  total_tokens: 18082
   lines_added: 0
   lines_removed: 0
   files_changed: 0
