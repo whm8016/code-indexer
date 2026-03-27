@@ -400,8 +400,8 @@ days:
   - source: cursor
     total_seconds: 4320
 - date: 2026-03-27
-  total_seconds: 1080
-  file_edits: 129
+  total_seconds: 1200
+  file_edits: 159
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
@@ -417,4 +417,4 @@ days:
     lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 1080
+    total_seconds: 1200
