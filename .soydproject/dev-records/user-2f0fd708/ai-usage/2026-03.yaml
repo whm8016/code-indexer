@@ -1,9 +1,15 @@
 member_id: user-2f0fd708
 month: 2026-03
 entries:
-- model: gpt-5.3-codex-high
+- model: claude-sonnet-4.6
+  session_count: 4
+  total_tokens: 25506
+  lines_added: 33
+  lines_removed: 11
+  files_changed: 4
+- model: default
   session_count: 5
-  total_tokens: 17243
+  total_tokens: 0
   lines_added: 0
   lines_removed: 0
   files_changed: 0
@@ -13,39 +19,15 @@ entries:
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: 8xii6znus9mf5avqlltv30dvpmhew93dxsqgv8dgdij53
-  session_count: 2
-  total_tokens: 132245
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: composer-2
-  session_count: 13
-  total_tokens: 455091
-  lines_added: 248
-  lines_removed: 100
-  files_changed: 13
-- model: default
-  session_count: 5
-  total_tokens: 0
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
 - model: gemini-3.1-pro
   session_count: 26
   total_tokens: 97729
   lines_added: 566
   lines_removed: 32
   files_changed: 9
-- model: claude-4.6-opus-max-thinking
-  session_count: 19
-  total_tokens: 96024
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: claude-opus-4.6
-  session_count: 31
-  total_tokens: 127437
+- model: composer-1.5
+  session_count: 3
+  total_tokens: 86490
   lines_added: 0
   lines_removed: 0
   files_changed: 0
@@ -55,33 +37,51 @@ entries:
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: claude-4.6-opus-high-thinking
-  session_count: 21
-  total_tokens: 536256
-  lines_added: 214
-  lines_removed: 181
-  files_changed: 13
-- model: claude-sonnet-4.6
-  session_count: 4
-  total_tokens: 25506
-  lines_added: 33
-  lines_removed: 11
-  files_changed: 4
+- model: claude-opus-4.6
+  session_count: 31
+  total_tokens: 127437
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
 - model: 197nxlw1illpr6lc6evrflzp9smfvuq3734v17fsu8h3
   session_count: 12
   total_tokens: 382588
   lines_added: 0
   lines_removed: 0
   files_changed: 0
+- model: claude-4.6-opus-max-thinking
+  session_count: 19
+  total_tokens: 96024
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: claude-4.6-opus-high-thinking
+  session_count: 21
+  total_tokens: 536256
+  lines_added: 214
+  lines_removed: 181
+  files_changed: 13
+- model: composer-2
+  session_count: 13
+  total_tokens: 455091
+  lines_added: 248
+  lines_removed: 100
+  files_changed: 13
 - model: gpt-5.3-codex
   session_count: 178
   total_tokens: 545647
   lines_added: 11374
   lines_removed: 2420
   files_changed: 88
-- model: composer-1.5
-  session_count: 3
-  total_tokens: 86490
+- model: gpt-5.3-codex-high
+  session_count: 5
+  total_tokens: 17243
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: 8xii6znus9mf5avqlltv30dvpmhew93dxsqgv8dgdij53
+  session_count: 2
+  total_tokens: 132245
   lines_added: 0
   lines_removed: 0
   files_changed: 0
