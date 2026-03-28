@@ -72,7 +72,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-4.6-opus-max-thinking
-  tokens: 0
+  tokens: 82636
   lines_added: 209
   lines_removed: 6
   files_changed: 3
