@@ -72,11 +72,11 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-4.6-opus-max-thinking
-  tokens: 95807
+  tokens: 0
   lines_added: 44
   lines_removed: 50
   files_changed: 2
-  status: aborted
+  status: completed
   created_at: 2026-03-28T03:52:24
 - id: b165772b-32ec-4cd1-8113-cf732d2b5842
   name: Greeting in Chinese
