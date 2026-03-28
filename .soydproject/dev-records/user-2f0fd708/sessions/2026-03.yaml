@@ -1,6 +1,39 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: 07dfe970-58a9-492d-b394-2441b07b3637
+  name: 开发记录数据统计分析
+  source: cursor
+  platform: cursor
+  model: 8xii6znus9mf5avqlltv30dvpmhew93dxsqgv8dgdij53
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-28T06:03:48
+- id: 8e88bfda-213c-4889-a5cb-a2885e1133c6
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-4.6-opus-high-thinking
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-28T06:02:10
+- id: e340d353-f542-419b-adbc-34daa4b86657
+  name: User onboarding and registration flow search
+  source: cursor
+  platform: cursor
+  model: 197nxlw1illpr6lc6evrflzp9smfvuq3734v17fsu8h3
+  tokens: 87294
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-28T05:59:55
 - id: 9f1ad49a-b132-41d6-8aa5-3cf98f0cf667
   name: API definition and usage search
   source: cursor
