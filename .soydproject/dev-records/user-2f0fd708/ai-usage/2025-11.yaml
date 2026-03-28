@@ -1,12 +1,6 @@
 member_id: user-2f0fd708
 month: 2025-11
 entries:
-- model: claude-4.5-sonnet-thinking
-  session_count: 28
-  total_tokens: 106206
-  lines_added: 7824
-  lines_removed: 370
-  files_changed: 67
 - model: claude-4-opus-thinking
   session_count: 3
   total_tokens: 0
@@ -19,3 +13,9 @@ entries:
   lines_added: 895
   lines_removed: 13
   files_changed: 14
+- model: claude-4.5-sonnet-thinking
+  session_count: 28
+  total_tokens: 106206
+  lines_added: 7824
+  lines_removed: 370
+  files_changed: 67
