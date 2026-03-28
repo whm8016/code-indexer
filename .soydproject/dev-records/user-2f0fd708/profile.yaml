@@ -4,8 +4,8 @@ email: 347734166@qq.com
 current_streak: 10
 longest_streak: 14
 last_active_date: 2026-03-28
-total_seconds: 59520
-exported_at: 2026-03-28T07:38:14.179429200+00:00
+total_seconds: 62160
+exported_at: 2026-03-28T09:53:43.423196400+00:00
 top_languages:
 - language: Python
   total_seconds: 38520
@@ -14,16 +14,16 @@ top_languages:
 - language: JSON
   total_seconds: 4440
 - language: Markdown
-  total_seconds: 2640
+  total_seconds: 3120
 - language: TypeScript React
   total_seconds: 1320
 - language: TOML
   total_seconds: 600
+- language: TypeScript
+  total_seconds: 360
 - language: JavaScript
   total_seconds: 360
 - language: Rust
   total_seconds: 240
-- language: TypeScript
-  total_seconds: 120
 - language: SQL
   total_seconds: 120
