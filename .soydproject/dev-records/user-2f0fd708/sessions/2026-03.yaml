@@ -1,6 +1,39 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: 7374126a-1c83-4cd6-b86e-398f40838d73
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 72278
+  lines_added: 2
+  lines_removed: 2
+  files_changed: 1
+  status: aborted
+  created_at: 2026-03-29T16:52:03
+- id: 116c7a4f-3ff1-48a6-a45e-2ef3569ba852
+  name: 代码结构分析报告
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 82285
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-29T15:16:39
+- id: 3201969f-83ce-4523-b697-cbb01c410e79
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 75258
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-29T15:15:51
 - id: a7b7b4bc-a3b4-47d8-a5d2-bf6bc5e5d2ba
   name: ''
   source: cursor
@@ -17,7 +50,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 62115
+  tokens: 86332
   lines_added: 18
   lines_removed: 0
   files_changed: 1
@@ -4687,6 +4720,17 @@ sessions:
   files_changed: 0
   status: completed
   created_at: 2026-03-28T09:56:22
+- id: osagent-1774803713581-dd0052ca
+  name: 测试一下啊
+  source: os_agent
+  platform: os_agent
+  model: qwen-max
+  tokens: 27505
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: idle
+  created_at: 2026-03-29T17:01:53.583Z
 - id: osagent-1774802392376-dc42896b
   name: 测试一下
   source: os_agent
