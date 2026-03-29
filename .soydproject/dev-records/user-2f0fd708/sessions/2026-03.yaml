@@ -4702,7 +4702,7 @@ sessions:
   name: 你好，测试一下
   source: os_agent
   platform: os_agent
-  model: deepseek-v3.2
+  model: qwen3-max
   tokens: 0
   lines_added: 0
   lines_removed: 0
