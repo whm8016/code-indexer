@@ -7,21 +7,9 @@ entries:
   lines_added: 3538
   lines_removed: 1583
   files_changed: 30
-- model: claude-4.6-opus-max-thinking
-  session_count: 21
-  total_tokens: 118349
-  lines_added: 44
-  lines_removed: 50
-  files_changed: 2
-- model: default
-  session_count: 5
-  total_tokens: 0
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: gpt-5.3-codex-high
-  session_count: 5
-  total_tokens: 17243
+- model: cx-5.4
+  session_count: 6
+  total_tokens: 18897
   lines_added: 0
   lines_removed: 0
   files_changed: 0
@@ -31,33 +19,27 @@ entries:
   lines_added: 11374
   lines_removed: 2420
   files_changed: 88
-- model: gpt-5.2-high-fast
-  session_count: 2
-  total_tokens: 0
+- model: claude-4.6-opus-high-thinking
+  session_count: 32
+  total_tokens: 878066
+  lines_added: 500
+  lines_removed: 203
+  files_changed: 18
+- model: cx-5.4-high
+  session_count: 1
+  total_tokens: 19568
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: claude-opus-4.6
-  session_count: 31
-  total_tokens: 127437
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: claude-sonnet-4.6
-  session_count: 4
-  total_tokens: 25506
-  lines_added: 33
-  lines_removed: 11
-  files_changed: 4
 - model: 8xii6znus9mf5avqlltv30dvpmhew93dxsqgv8dgdij53
   session_count: 4
   total_tokens: 358718
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: composer-1.5
-  session_count: 3
-  total_tokens: 86490
+- model: claude-opus-4.6
+  session_count: 31
+  total_tokens: 127437
   lines_added: 0
   lines_removed: 0
   files_changed: 0
@@ -73,39 +55,57 @@ entries:
   lines_added: 0
   lines_removed: 0
   files_changed: 0
+- model: composer-1.5
+  session_count: 3
+  total_tokens: 86490
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
 - model: claude-4.5-sonnet
   session_count: 2
   total_tokens: 19343
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: cx-5.4
-  session_count: 6
-  total_tokens: 18897
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: cx-5.4-high
-  session_count: 1
-  total_tokens: 19568
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: gemini-3.1-pro
-  session_count: 26
-  total_tokens: 97729
-  lines_added: 566
-  lines_removed: 32
-  files_changed: 9
 - model: composer-2-fast
   session_count: 14
   total_tokens: 434850
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: claude-4.6-opus-high-thinking
-  session_count: 32
-  total_tokens: 878066
-  lines_added: 500
-  lines_removed: 203
-  files_changed: 18
+- model: claude-4.6-opus-max-thinking
+  session_count: 21
+  total_tokens: 118349
+  lines_added: 44
+  lines_removed: 50
+  files_changed: 2
+- model: default
+  session_count: 5
+  total_tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: gpt-5.2-high-fast
+  session_count: 2
+  total_tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: gpt-5.3-codex-high
+  session_count: 5
+  total_tokens: 17243
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+- model: claude-sonnet-4.6
+  session_count: 4
+  total_tokens: 25506
+  lines_added: 33
+  lines_removed: 11
+  files_changed: 4
+- model: gemini-3.1-pro
+  session_count: 26
+  total_tokens: 97729
+  lines_added: 566
+  lines_removed: 32
+  files_changed: 9
