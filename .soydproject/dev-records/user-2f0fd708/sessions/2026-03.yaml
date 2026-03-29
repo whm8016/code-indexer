@@ -1,6 +1,72 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: 514c2e00-57e0-47c7-9694-c17bb1e8eb9f
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 34557
+  lines_added: 18
+  lines_removed: 0
+  files_changed: 1
+  status: aborted
+  created_at: 2026-03-29T14:38:47
+- id: de334986-339b-4b4f-8426-6950e0ee36b0
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 19702
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-29T14:38:21
+- id: 9934f173-fa95-4175-9fca-7b52dfd5b23d
+  name: Codex CLI 客户端使用指南
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 39448
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-29T14:14:49
+- id: 31ff543e-9c5e-4901-b5ab-e1c9eabfbe03
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-29T14:12:11
+- id: 13438488-0d7d-4b52-8252-09032851b0e3
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-29T14:12:11
+- id: dd5483e9-cb10-440c-aea6-c1f0b270906b
+  name: Testing discussion
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 17933
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-29T13:25:03
 - id: 3c5eeb9b-5b2f-4a01-9f5b-d0cc13518fb6
   name: ''
   source: cursor
