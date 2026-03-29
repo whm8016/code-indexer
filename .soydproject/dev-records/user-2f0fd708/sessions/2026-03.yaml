@@ -6,7 +6,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 34557
+  tokens: 57691
   lines_added: 18
   lines_removed: 0
   files_changed: 1
@@ -4632,6 +4632,39 @@ sessions:
   files_changed: 1
   status: aborted
   created_at: 2026-03-01T08:02:47
+- id: codex:rollout-2026-03-29T12-06-56-019d37c6-00eb-7ff2-9f3b-0cee37425e6e
+  name: 'cd E:\\yorg\\scripts\\marketplace\r\n>> docker compose --env-file ..\\..\\.env -f .\\docker-compose.yml up -d api\r\nunable to get image ''postgres:16-alpine'': failed to connect to the docker API at n…'
+  source: cli
+  platform: codex
+  model: gpt-5.3-codex
+  tokens: 24922898
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-29T04:07:16
+- id: codex:rollout-2026-03-28T18-02-01-019d33e4-bd3a-72d1-8803-ee942bea1759
+  name: 你是怎么使用的，你能读取我的cursor代码吗\n
+  source: cli
+  platform: codex
+  model: gpt-5.4
+  tokens: 21236663
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-28T10:02:22
+- id: codex:rollout-2026-03-28T17-56-02-019d33df-3fa7-7281-a924-44d9f31f4335
+  name: 你好\n
+  source: cli
+  platform: codex
+  model: gpt-5.3-codex
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-28T09:56:22
 - id: osagent-1774756055287-d1654c03
   name: 你好，测试一下
   source: os_agent
