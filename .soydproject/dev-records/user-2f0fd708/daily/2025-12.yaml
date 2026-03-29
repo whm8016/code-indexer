@@ -2,21 +2,17 @@ member_id: user-2f0fd708
 month: 2025-12
 days:
 - date: 2025-12-29
-  total_seconds: 720
-  file_edits: 8
+  total_seconds: 480
+  file_edits: 6
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
   agent_actions: 0
   languages:
-  - language: JSON
-    total_seconds: 120
-    lines_added: 0
-    lines_removed: 0
   - language: Python
-    total_seconds: 600
+    total_seconds: 480
     lines_added: 0
     lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 720
+    total_seconds: 480
