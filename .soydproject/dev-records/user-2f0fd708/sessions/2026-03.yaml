@@ -1,12 +1,188 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: b0c8a072-a049-4bb5-90bf-233108be7690
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 65432
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T05:56:04
+- id: 6c57662e-6dd6-4707-989b-315b9d806444
+  name: Billing and payout system exploration
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 44052
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T05:29:27
+- id: b5435507-d918-4711-8d9a-d62d7a688df5
+  name: Cloud account verification and pool matching
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 15870
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T05:29:25
+- id: fcabd73c-0b64-475c-83be-7be7311a8683
+  name: Rust validation system in yorg_frontend
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 15872
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T05:29:21
+- id: cd853322-a119-46b1-9e07-3b7fbb098f6d
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-30T05:12:27
+- id: 41c19cab-1226-4a09-b1f5-dd6a7371442e
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-30T05:12:27
+- id: 47d0780b-dbcc-4dc4-b9d4-14d6d07b5030
+  name: ZhiPu model provider code search
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 84359
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-30T04:22:55
+- id: 76463999-8751-4598-8990-6121cb4f46ae
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 17926
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T04:19:11
+- id: 8d091b99-4b7c-4b42-a5ec-1e70ba402798
+  name: Greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 122197
+  lines_added: 6
+  lines_removed: 4
+  files_changed: 3
+  status: aborted
+  created_at: 2026-03-30T04:17:14
+- id: 7414be44-f6b9-47ee-9368-cc40e5c5aa3f
+  name: Stripe用户找不到提示
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 40452
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T03:36:50
+- id: df3231e1-cdaf-4bf6-b58c-9f3b68080b20
+  name: Stripe interface input logic
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 25714
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T03:32:05
+- id: fad9cfcb-9c7c-4313-9fa1-e20c81afb474
+  name: Provider interface code review
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 126267
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T03:09:58
+- id: 57c06e33-b669-426e-8ebc-b0dfe314e293
+  name: Casual greeting
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 58880
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T01:51:07
+- id: ca4a87ed-7ce3-4f94-acad-68d9eb6835d5
+  name: Casual greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 76501
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-29T17:22:25
+- id: 5421c35b-911c-4ba9-8747-0d00c1fcafa4
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-29T17:05:36
+- id: 502ef163-9ed4-49fb-9e32-cd8a3ce0cc26
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-29T17:05:36
 - id: 7374126a-1c83-4cd6-b86e-398f40838d73
   name: Greeting in Chinese
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 72278
+  tokens: 75261
   lines_added: 2
   lines_removed: 2
   files_changed: 1
@@ -28,11 +204,11 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 75258
+  tokens: 124524
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-  status: aborted
+  status: completed
   created_at: 2026-03-29T15:15:51
 - id: a7b7b4bc-a3b4-47d8-a5d2-bf6bc5e5d2ba
   name: ''
@@ -50,7 +226,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 86332
+  tokens: 86490
   lines_added: 18
   lines_removed: 0
   files_changed: 1
