@@ -17,7 +17,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 60316
+  tokens: 62069
   lines_added: 25
   lines_removed: 0
   files_changed: 1
@@ -138,7 +138,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 118664
+  tokens: 120395
   lines_added: 0
   lines_removed: 0
   files_changed: 0
