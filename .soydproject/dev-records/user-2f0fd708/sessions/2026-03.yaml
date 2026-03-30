@@ -1,12 +1,23 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: 60df2041-fc50-4cef-b6bb-f14ad49d1b73
+  name: Test package installation confusion
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 24394
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-30T14:40:38
 - id: acc9ddf1-1cd5-447b-bdbf-8352dd27b072
   name: Greeting in Chinese
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 42682
+  tokens: 48908
   lines_added: 25
   lines_removed: 0
   files_changed: 1
@@ -127,7 +138,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 93758
+  tokens: 109727
   lines_added: 0
   lines_removed: 0
   files_changed: 0
