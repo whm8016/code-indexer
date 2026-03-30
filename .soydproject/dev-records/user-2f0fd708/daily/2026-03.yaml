@@ -465,8 +465,8 @@ days:
   - source: cursor
     total_seconds: 360
 - date: 2026-03-30
-  total_seconds: 120
-  file_edits: 1
+  total_seconds: 240
+  file_edits: 2
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
@@ -476,6 +476,10 @@ days:
     total_seconds: 120
     lines_added: 0
     lines_removed: 0
+  - language: Rust
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 120
+    total_seconds: 240
