@@ -1,6 +1,61 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: f5c658b2-3be6-4af2-9e74-48ab614ff34c
+  name: ''
+  source: cursor
+  platform: cursor
+  model: composer-2-fast
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-30T17:09:04
+- id: 695e589e-9efc-4824-a64e-146a9c51faa4
+  name: cursor是不是cursor cli
+  source: cursor
+  platform: cursor
+  model: composer-2-fast
+  tokens: 9492
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-30T17:09:04
+- id: dc36bc5c-0d9e-47f0-ae07-a94f423dc0e0
+  name: ''
+  source: cursor
+  platform: cursor
+  model: composer-2-fast
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-30T17:03:50
+- id: c645f7bc-fd70-45fd-838a-147707f0e509
+  name: ''
+  source: cursor
+  platform: cursor
+  model: composer-2-fast
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-30T17:03:50
+- id: c9d7c76d-5ffc-4377-b2d9-2ab778d4c263
+  name: Frontend restart and port occupation issues
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T16:55:17
 - id: 60df2041-fc50-4cef-b6bb-f14ad49d1b73
   name: Test package installation confusion
   source: cursor
@@ -17,10 +72,10 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 81697
-  lines_added: 25
-  lines_removed: 0
-  files_changed: 1
+  tokens: 110130
+  lines_added: 90
+  lines_removed: 16
+  files_changed: 3
   status: aborted
   created_at: 2026-03-30T09:24:41
 - id: 5f395747-3a73-4c2c-9b2b-12bb43d51d8b
@@ -138,7 +193,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 138933
+  tokens: 169753
   lines_added: 0
   lines_removed: 0
   files_changed: 0
