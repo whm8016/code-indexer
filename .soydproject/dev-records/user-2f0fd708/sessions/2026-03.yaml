@@ -6,7 +6,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 52646
+  tokens: 66688
   lines_added: 0
   lines_removed: 0
   files_changed: 0
