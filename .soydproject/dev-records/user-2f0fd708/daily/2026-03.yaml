@@ -465,8 +465,8 @@ days:
   - source: cursor
     total_seconds: 360
 - date: 2026-03-30
-  total_seconds: 240
-  file_edits: 2
+  total_seconds: 360
+  file_edits: 4
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
@@ -480,6 +480,10 @@ days:
     total_seconds: 120
     lines_added: 0
     lines_removed: 0
+  - language: TypeScript
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 240
+    total_seconds: 360
