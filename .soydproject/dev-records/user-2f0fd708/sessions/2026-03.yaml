@@ -1,6 +1,61 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: 49533cb6-7ecf-40ea-b16b-f7967451eb1f
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-30T07:32:22
+- id: 0a3efe61-3a2a-4e37-8904-037dd6bb08f8
+  name: Yorg project cursor account verification
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T07:31:35
+- id: 9602f858-a8b1-4e49-a8f5-36016fa786e7
+  name: 你好
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 18110
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T07:31:09
+- id: 7eb33c32-778f-44d7-ac07-1ab1df3ecf05
+  name: Code search for model and API key validation
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T07:29:36
+- id: 658dcf35-9061-4abb-8b91-27b7e41d96bb
+  name: Casual greeting in Chinese
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 18337
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T07:29:06
 - id: e2ffa999-1121-4e0a-8622-b7de30cb5f52
   name: API key validation issue
   source: cursor
@@ -17,7 +72,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 19658
+  tokens: 51584
   lines_added: 0
   lines_removed: 0
   files_changed: 0
