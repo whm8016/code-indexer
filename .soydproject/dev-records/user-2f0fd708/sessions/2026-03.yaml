@@ -1,16 +1,38 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
-- id: 49533cb6-7ecf-40ea-b16b-f7967451eb1f
-  name: ''
+- id: 7327c107-9c22-43b3-ad65-c67d74950480
+  name: Casual greeting in Chinese
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 0
+  tokens: 18145
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-  status: none
+  status: aborted
+  created_at: 2026-03-30T08:03:39
+- id: a40370a5-ee6e-49d8-a467-fac84dc5220c
+  name: Yorg project cloud account validation process
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 16221
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T07:52:11
+- id: 49533cb6-7ecf-40ea-b16b-f7967451eb1f
+  name: Yorg project cloud account verification process
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 98217
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
   created_at: 2026-03-30T07:32:22
 - id: 0a3efe61-3a2a-4e37-8904-037dd6bb08f8
   name: Yorg project cursor account verification
@@ -28,7 +50,7 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 18110
+  tokens: 59691
   lines_added: 0
   lines_removed: 0
   files_changed: 0
@@ -72,10 +94,10 @@ sessions:
   source: cursor
   platform: cursor
   model: claude-high
-  tokens: 51584
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
+  tokens: 79411
+  lines_added: 3
+  lines_removed: 2
+  files_changed: 3
   status: aborted
   created_at: 2026-03-30T06:18:20
 - id: b0c8a072-a049-4bb5-90bf-233108be7690
@@ -172,8 +194,8 @@ sessions:
   platform: cursor
   model: claude-high
   tokens: 122197
-  lines_added: 6
-  lines_removed: 4
+  lines_added: 8
+  lines_removed: 5
   files_changed: 3
   status: aborted
   created_at: 2026-03-30T04:17:14
