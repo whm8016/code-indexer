@@ -1,6 +1,17 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: ce65afc3-70dc-463e-b9bc-2b6bf8295297
+  name: API key acquisition for AI models
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 19658
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T06:18:20
 - id: b0c8a072-a049-4bb5-90bf-233108be7690
   name: Greeting in Chinese
   source: cursor
