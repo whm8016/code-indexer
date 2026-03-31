@@ -1,6 +1,28 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: 815c26b1-f698-44be-81de-3820f1744414
+  name: 你怎么启用多个agent来使我的任务可以并行处理
+  source: cursor
+  platform: cursor
+  model: op-4.6-relay
+  tokens: 17176
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-31T13:34:17
+- id: d2297c1c-a72c-4caf-967d-e85c59d11d89
+  name: File reference discussion
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 76878
+  lines_added: 58
+  lines_removed: 30
+  files_changed: 2
+  status: completed
+  created_at: 2026-03-31T13:06:07
 - id: 11631dd3-4b6a-49d0-b3b1-240c2ce99747
   name: 继续
   source: cursor
@@ -27,11 +49,11 @@ sessions:
   name: Api key validation logic modification
   source: cursor
   platform: cursor
-  model: op-4.6-relay
-  tokens: 112625
-  lines_added: 4
-  lines_removed: 3
-  files_changed: 1
+  model: claude-high
+  tokens: 0
+  lines_added: 24
+  lines_removed: 294
+  files_changed: 3
   status: aborted
   created_at: 2026-03-31T12:23:41
 - id: 7a8ab581-ac77-4965-8afd-1b405f58e9eb

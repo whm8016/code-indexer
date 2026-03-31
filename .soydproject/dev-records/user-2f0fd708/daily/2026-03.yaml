@@ -496,15 +496,15 @@ days:
   - source: cursor
     total_seconds: 1200
 - date: 2026-03-31
-  total_seconds: 480
-  file_edits: 5
+  total_seconds: 1800
+  file_edits: 162
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
   agent_actions: 0
   languages:
   - language: Markdown
-    total_seconds: 120
+    total_seconds: 720
     lines_added: 0
     lines_removed: 0
   - language: Python
@@ -515,10 +515,14 @@ days:
     total_seconds: 120
     lines_added: 0
     lines_removed: 0
+  - language: TypeScript
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
   - language: TypeScript React
     total_seconds: 120
     lines_added: 0
     lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 480
+    total_seconds: 1800
