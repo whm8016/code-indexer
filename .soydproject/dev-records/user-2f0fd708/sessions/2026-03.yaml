@@ -1,6 +1,94 @@
 member_id: user-2f0fd708
 month: 2026-03
 sessions:
+- id: dbb34d07-8248-4460-9161-47b0407b2691
+  name: 各平台模型检测方法
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 93852
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-31T07:03:51
+- id: d546ed45-8683-4183-96f5-f2a9eaf60495
+  name: Message receipt confirmation
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 16725
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-31T06:12:52
+- id: 31091e98-8887-44b6-bbc9-3b3deea04ec2
+  name: Proposing a plan for Rust module refactoring
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 17599
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-31T04:48:38
+- id: 17ad6f32-91c8-4d33-9ae1-a2e6ca91c450
+  name: Celery in the project
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 27933
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-31T03:39:47
+- id: a497f2b0-b64f-4aa9-aede-9d00cc718d29
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-31T02:37:15
+- id: 759d5498-6752-4574-9bd2-bc0c9b89916f
+  name: ''
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: none
+  created_at: 2026-03-31T02:37:15
+- id: 2139c5aa-7930-4e87-bede-e4050d6bb41c
+  name: Commit or stash changes before merge
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 38817
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-03-31T02:19:20
+- id: 90f12d9f-0132-44db-85b3-865df2aa8d14
+  name: Frontend development server restart
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 21587
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: aborted
+  created_at: 2026-03-30T18:26:01
 - id: 9b009a7b-e7e7-4e3a-ba55-639298ac417b
   name: File content issue
   source: cursor
