@@ -1,26 +1,26 @@
 member_id: user-2f0fd708
 month: 2025-12
 entries:
-- model: gpt-5.1-codex-max
-  session_count: 19
-  total_tokens: 50458
-  lines_added: 833
-  lines_removed: 2
-  files_changed: 2
+- model: claude-4.5-opus-high-thinking
+  session_count: 4
+  total_tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
 - model: claude-4.5-sonnet-thinking
   session_count: 31
   total_tokens: 0
   lines_added: 5926
   lines_removed: 900
   files_changed: 26
+- model: gpt-5.1-codex-max
+  session_count: 19
+  total_tokens: 50458
+  lines_added: 833
+  lines_removed: 2
+  files_changed: 2
 - model: gpt-5.1-codex
   session_count: 10
-  total_tokens: 0
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
-- model: claude-4.5-opus-high-thinking
-  session_count: 4
   total_tokens: 0
   lines_added: 0
   lines_removed: 0
