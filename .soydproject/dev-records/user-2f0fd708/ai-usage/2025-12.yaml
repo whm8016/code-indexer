@@ -13,15 +13,15 @@ entries:
   lines_added: 0
   lines_removed: 0
   files_changed: 0
-- model: gpt-5.1-codex
-  session_count: 10
-  total_tokens: 0
-  lines_added: 0
-  lines_removed: 0
-  files_changed: 0
 - model: gpt-5.1-codex-max
   session_count: 19
   total_tokens: 50458
   lines_added: 833
   lines_removed: 2
   files_changed: 2
+- model: gpt-5.1-codex
+  session_count: 10
+  total_tokens: 0
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
