@@ -1,9 +1,15 @@
 member_id: user-2f0fd708
 month: 2026-04
 entries:
+- model: claude-high
+  session_count: 1
+  total_tokens: 17167
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
 - model: op-4.6-relay
-  session_count: 4
-  total_tokens: 193902
+  session_count: 11
+  total_tokens: 320239
   lines_added: 0
   lines_removed: 0
   files_changed: 0
