@@ -2,13 +2,17 @@ member_id: user-2f0fd708
 month: 2026-04
 days:
 - date: 2026-04-01
-  total_seconds: 480
-  file_edits: 9
+  total_seconds: 600
+  file_edits: 10
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
   agent_actions: 0
   languages:
+  - language: Markdown
+    total_seconds: 120
+    lines_added: 0
+    lines_removed: 0
   - language: SQL
     total_seconds: 120
     lines_added: 0
@@ -19,4 +23,4 @@ days:
     lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 480
+    total_seconds: 600
