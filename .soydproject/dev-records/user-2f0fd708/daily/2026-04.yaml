@@ -2,8 +2,8 @@ member_id: user-2f0fd708
 month: 2026-04
 days:
 - date: 2026-04-01
-  total_seconds: 240
-  file_edits: 2
+  total_seconds: 480
+  file_edits: 9
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
@@ -14,9 +14,9 @@ days:
     lines_added: 0
     lines_removed: 0
   - language: TypeScript React
-    total_seconds: 120
+    total_seconds: 360
     lines_added: 0
     lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 240
+    total_seconds: 480
