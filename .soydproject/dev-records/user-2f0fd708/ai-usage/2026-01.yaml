@@ -1,6 +1,12 @@
 member_id: user-2f0fd708
 month: 2026-01
 entries:
+- model: gpt-5.2-codex-high
+  session_count: 14
+  total_tokens: 0
+  lines_added: 711
+  lines_removed: 17
+  files_changed: 14
 - model: claude-4.5-sonnet-thinking
   session_count: 2
   total_tokens: 33
@@ -19,9 +25,3 @@ entries:
   lines_added: 3829
   lines_removed: 4
   files_changed: 9
-- model: gpt-5.2-codex-high
-  session_count: 14
-  total_tokens: 0
-  lines_added: 711
-  lines_removed: 17
-  files_changed: 14
