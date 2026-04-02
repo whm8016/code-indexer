@@ -29,17 +29,21 @@ days:
   - source: cursor
     total_seconds: 2640
 - date: 2026-04-02
-  total_seconds: 360
-  file_edits: 3
+  total_seconds: 840
+  file_edits: 7
   lines_added: 0
   lines_removed: 0
   terminal_cmds: 0
   agent_actions: 0
   languages:
   - language: Markdown
-    total_seconds: 360
+    total_seconds: 720
+    lines_added: 0
+    lines_removed: 0
+  - language: TypeScript
+    total_seconds: 120
     lines_added: 0
     lines_removed: 0
   sources:
   - source: cursor
-    total_seconds: 360
+    total_seconds: 840
