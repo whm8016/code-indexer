@@ -1,6 +1,17 @@
 member_id: user-2f0fd708
 month: 2026-04
 sessions:
+- id: a066c7b9-63bc-4265-8f22-aa4e5ae3e543
+  name: File location for useApiSetup.ts
+  source: cursor
+  platform: cursor
+  model: claude-high
+  tokens: 16558
+  lines_added: 0
+  lines_removed: 0
+  files_changed: 0
+  status: completed
+  created_at: 2026-04-02T05:57:43
 - id: 16941399-cfed-42e0-b02f-d428c50a3ee4
   name: Directory structure exploration of yorg_frontend
   source: cursor
